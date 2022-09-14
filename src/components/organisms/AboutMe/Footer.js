@@ -10,7 +10,7 @@ const Footer = () => {
                 <SiGmail className='w-5 h-5 cursor-pointer'/>
             </div>
             <p className="text-xs">
-                Copyright © Hainv
+                Powered © Hainv
             </p>
         </div>
     )
