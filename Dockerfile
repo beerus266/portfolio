@@ -4,7 +4,7 @@ FROM node:18-alpine
 WORKDIR /app
 
 # Installing dependencies
-COPY ./package*.json /app
+COPY ./package.json /app
 
 RUN yarn
 
