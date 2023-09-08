@@ -4,13 +4,15 @@ FROM node:18-alpine
 WORKDIR /app
 
 # Installing dependencies
-COPY ./package.json /app
+COPY ./package.json ./
 
-RUN yarn
+# RUN yarn
+RUN npm install --force
 
 # Copying all the files in our project
 COPY . .
 
 EXPOSE 3000
 
-CMD ["yarn", "start"]
+# CMD ["yarn", "start"]
+CMD ["npm", "run", "start"]
